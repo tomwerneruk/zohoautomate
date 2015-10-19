@@ -9,6 +9,7 @@ class ZohoAutomater:
     def __init__(self, username, password):
         self.browser_handle = self.load_zoho(username, password)
 
+    # Boot Firefox, load Zoho and login. Store the browser handle for subsequent calls
     def load_zoho(self, username, password):
         browser = webdriver.Firefox()
         browser.get('https://www.zoho.com/mail/login.html')
